@@ -3,6 +3,10 @@
 ✗ Create references router for CRUD endpoints
 ✗ Make OPTIONS request
 
+// Database
+✗ Setup PostgreSQL locally
+✗ Add Setup script for PostgreSQL
+
 // Additional Points
 ✗ Implement job queue using Redis
 ✗ Add additional Validation 
@@ -16,7 +20,11 @@
 ✗ Hook up Router
 ✗ Add POST/GET/UPDATE/DELETE (CRUD) endpoints (obviously)
 
-//Test Coverage
+// Test Coverage
 ✗ Make Tests for all endpoints
 
-//For Finished tasks (✓)
+// For Finished tasks (✓)
+
+// Reference
+JS-Dom https://github.com/jsdom/jsdom
+Vizion challenge https://github.com/vizionapi/api-challenge#data-fetching-notes
