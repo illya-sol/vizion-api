@@ -1,0 +1,22 @@
+// Server
+✗ Make use of JSDOM
+✗ Create references router for CRUD endpoints
+✗ Make OPTIONS request
+
+// Additional Points
+✗ Implement job queue using Redis
+✗ Add additional Validation 
+✗ Come up with something
+
+// TypeScript
+✗ Make Reference interface
+✗ Make Result interface
+
+// Endpoints
+✗ Hook up Router
+✗ Add POST/GET/UPDATE/DELETE (CRUD) endpoints (obviously)
+
+//Test Coverage
+✗ Make Tests for all endpoints
+
+//For Finished tasks (✓)
