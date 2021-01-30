@@ -4,8 +4,8 @@ import { referencesController } from './referencesController'
 const referencesRouter: Router = Router()
 
 referencesRouter.post('/', referencesController.insert)
-referencesRouter.get('/', referencesController.find)
-referencesRouter.patch('/', referencesController.edit)
-referencesRouter.delete('/', referencesController.remove)
+referencesRouter.get('/:ref_id', referencesController.find)
+referencesRouter.patch('/:ref_id', referencesController.edit)
+referencesRouter.delete('/:ref_id', referencesController.remove)
 
 export default referencesRouter
