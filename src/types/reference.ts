@@ -17,5 +17,5 @@ interface Result {
    created_at: string
 }
 
-export { Reference, Result };
+export { Reference, Result, Data };
 
