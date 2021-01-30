@@ -6,7 +6,7 @@
 	"author": "Illya Solodky",
 	"license": "MIT",
 	"scripts": {
-		"start": "ts-node src/index.ts",
+		"start": "nodemon src/index.ts",
 		"test": "jest",
 		"bundle": "node scripts/bundle.js"
 	},
