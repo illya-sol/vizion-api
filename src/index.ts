@@ -26,5 +26,5 @@ app.use('/references', referencesRouter)
 
 app.listen(port, () => {
    console.log('\x1b[32m', '\nServer Launched')
-   console.log('\x1b[37m', '');
+   console.log('\x1b[37m', '')
 });

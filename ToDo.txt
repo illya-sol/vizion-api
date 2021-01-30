@@ -1,14 +1,13 @@
 // Server
 ✗ Make use of JSDOM
-✗ Create references router for CRUD endpoints
-✗ Make OPTIONS request
+✗ Create "/references" router for CRUD endpoints
 
 // Database
 ✗ Setup PostgreSQL locally
 ✗ Add Setup script for PostgreSQL
 
 // Additional Points
-✗ Implement job queue using Redis
+✗ Implement job queue using Redis or ElasticMQ
 ✗ Add additional Validation 
 ✗ Come up with something
 
@@ -17,7 +16,7 @@
 ✗ Make Result interface
 
 // Endpoints
-✗ Hook up Router
+✓ Hook up Router
 ✗ Add POST/GET/UPDATE/DELETE (CRUD) endpoints (obviously)
 
 // Test Coverage

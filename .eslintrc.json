@@ -28,12 +28,9 @@
         ],
         "quotes": [
             "error",
-            "never"
+            "single"
         ],
-        "semi": [
-            "error",
-            "never"
-        ],
+        "semi": "off",
         // Jest Rules
         "jest/no-disabled-tests": "warn",
         "jest/no-focused-tests": "error",
