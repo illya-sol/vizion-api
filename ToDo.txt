@@ -1,6 +1,6 @@
 // Server
 ✗ Make use of JSDOM
-✗ Create "/references" router for CRUD endpoints
+✓ Create "/references" router for CRUD endpoints
 
 // Database
 ✗ Setup PostgreSQL locally
@@ -12,12 +12,13 @@
 ✗ Come up with something
 
 // TypeScript
-✗ Make Reference interface
-✗ Make Result interface
+✓ Make Reference interface
+✓ Make Result interface
 
 // Endpoints
 ✓ Hook up Router
-✗ Add POST/GET/UPDATE/DELETE (CRUD) endpoints (obviously)
+✓ Add POST/GET/UPDATE/DELETE (CRUD) endpoints (obviously)
+✗ Implement All endpoints
 
 // Test Coverage
 ✗ Make Tests for all endpoints
