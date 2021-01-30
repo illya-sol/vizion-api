@@ -1,20 +1,20 @@
 import bodyparser from 'body-parser'
 import cors from 'cors'
-import express from 'express'
+import express, { Application, Request, Response } from 'express'
 import morgan from 'morgan'
 import referencesRouter from './references/referencesRouter'
 
-const app: express.Application = express();
+const app: Application = express();
 const port: number = 4000;
 const format = '[:date[web]] :method ":url" :status :response-time';
 
 app.use(morgan(format, {
-   skip: (req, res) => { return res.statusCode < 400 },
+   skip: (req: Request, res: Response) => { return res.statusCode < 400 },
    stream: process.stderr
 }));
 
 app.use(morgan(format, {
-   skip: (req, res) => { return res.statusCode >= 400 },
+   skip: (req: Request, res: Response) => { return res.statusCode >= 400 },
    stream: process.stdout
 }))
 

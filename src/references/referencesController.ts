@@ -1,18 +1,18 @@
-import express from 'express';
+import { Request, Response } from 'express';
 
-const insert = (req: express.Request, res: express.Response) => {
+const insert = (req: Request, res: Response) => {
    res.sendStatus(201);
 }
 
-const find = (req: express.Request, res: express.Response) => {
+const find = (req: Request, res: Response) => {
    res.sendStatus(302);
 }
 
-const edit = (req: express.Request, res: express.Response) => {
+const edit = (req: Request, res: Response) => {
    res.sendStatus(200);
 }
 
-const remove = (req: express.Request, res: express.Response) => {
+const remove = (req: Request, res: Response) => {
    res.sendStatus(200);
 }
 
