@@ -5,9 +5,9 @@ export const testConn = (drop: boolean = false) => {
       type: "postgres",
       host: "localhost",
       port: 5432,
-      username: "Ilya",
+      username: "postgres",
       password: "root",
-      database: "VerizonReferenceApi",
+      database: "Vizion",
       synchronize: drop,
       dropSchema: drop,
       entities: [__dirname + "/../entity/*.*"]

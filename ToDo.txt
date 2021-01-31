@@ -3,8 +3,8 @@
 ✓ Create "/references" router for CRUD endpoints
 
 // Database
-✗ Setup PostgreSQL locally
-✗ Add Setup script for PostgreSQL
+✓ Setup PostgreSQL locally
+✓ Add Setup script for PostgreSQL
 
 // Additional Points
 ✗ Implement job queue using Redis or ElasticMQ

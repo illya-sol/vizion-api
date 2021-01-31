@@ -2,29 +2,38 @@ import bodyparser from 'body-parser'
 import cors from 'cors'
 import express, { Application, Request, Response } from 'express'
 import morgan from 'morgan'
+import 'reflect-metadata'
+import { createConnection } from 'typeorm'
 import referencesRouter from './references/referencesRouter'
 
-const app: Application = express();
-const port: number = 4000;
-const format = '[:date[web]] :method ":url" :status :response-time';
+const main = async () => {
+   const app: Application = express();
+   const port: number = 4000;
+   const format = '[:date[web]] :method ":url" :status :response-time';
 
-app.use(morgan(format, {
-   skip: (req: Request, res: Response) => { return res.statusCode < 400 },
-   stream: process.stderr
-}));
+   await createConnection()
 
-app.use(morgan(format, {
-   skip: (req: Request, res: Response) => { return res.statusCode >= 400 },
-   stream: process.stdout
-}))
+   app.use(morgan(format, {
+      skip: (req: Request, res: Response) => { return res.statusCode < 400 },
+      stream: process.stderr
+   }));
 
-app.use(cors());
-app.use(bodyparser.urlencoded({ extended: false }))
-app.use(bodyparser.json())
+   app.use(morgan(format, {
+      skip: (req: Request, res: Response) => { return res.statusCode >= 400 },
+      stream: process.stdout
+   }))
 
-app.use('/references', referencesRouter)
+   app.use(cors());
+   app.use(bodyparser.urlencoded({ extended: false }))
+   app.use(bodyparser.json())
 
-app.listen(port, () => {
-   console.log('\x1b[32m', '\nServer Launched')
-   console.log('\x1b[37m', '')
-});
+   app.use('/references', referencesRouter)
+
+   app.listen(port, () => {
+      console.log('\x1b[32m', '\nServer Launched')
+      console.log('\x1b[37m', '')
+   });
+
+}
+
+main()

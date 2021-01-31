@@ -6,7 +6,7 @@ interface Reference {
 }
 
 interface Data {
-   title: string
+   title?: string
    meta_description?: string
 }
 
