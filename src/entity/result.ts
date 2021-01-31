@@ -18,3 +18,5 @@ export class Result extends BaseEntity {
    @Column("timestamp")
    created_at!: string
 }
+
+export default Result

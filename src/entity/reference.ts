@@ -8,6 +8,8 @@ export class Reference extends BaseEntity {
    @Column()
    url!: string
 
-   @Column("timestamp")
+   @Column({ type: "timestamp", default: () => "CURRENT_TIMESTAMP" })
    created_at!: string
 }
+
+export default Reference

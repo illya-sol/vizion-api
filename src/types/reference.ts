@@ -13,7 +13,7 @@ interface Data {
 interface Result {
    id: number
    reference_id: number
-   data: Data
+   data?: Data
    created_at: string
 }
 

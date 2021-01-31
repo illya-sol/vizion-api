@@ -8,7 +8,7 @@
 
 // Additional Points
 ✗ Implement job queue using Redis or ElasticMQ
-✗ Add additional Validation 
+✓ Add additional Validation 
 ✗ Come up with something
 
 // TypeScript
@@ -18,7 +18,7 @@
 // Endpoints
 ✓ Hook up Router
 ✓ Add POST/GET/UPDATE/DELETE (CRUD) endpoints (obviously)
-✗ Implement All endpoints
+✗ Implement All endpoints (in progress)
 
 // Test Coverage
 ✗ Make Tests for all endpoints

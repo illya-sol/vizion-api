@@ -1,17 +1,19 @@
+
 import bodyparser from 'body-parser'
 import cors from 'cors'
 import express, { Application, Request, Response } from 'express'
 import morgan from 'morgan'
 import 'reflect-metadata'
-import { createConnection } from 'typeorm'
+import { Connection, createConnection } from 'typeorm'
 import referencesRouter from './references/referencesRouter'
 
-const main = async () => {
-   const app: Application = express();
-   const port: number = 4000;
-   const format = '[:date[web]] :method ":url" :status :response-time';
+let connection: Connection
 
-   await createConnection()
+const main = async () => {
+   const app: Application = express()
+   connection = await createConnection()
+   const port: number = 4000
+   const format = '[:date[web]] :method ":url" :status :response-time'
 
    app.use(morgan(format, {
       skip: (req: Request, res: Response) => { return res.statusCode < 400 },
@@ -35,5 +37,6 @@ const main = async () => {
    });
 
 }
-
 main()
+
+export { connection }
