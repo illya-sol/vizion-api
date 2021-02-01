@@ -3,7 +3,6 @@ import { resultsController } from './resultController'
 
 const resultsRouter: Router = Router()
 
-resultsRouter.get('/:res_id', resultsController.find)
-resultsRouter.delete('/:res_id', resultsController.remove)
+resultsRouter.get('/:ref_id', resultsController.find)
 
 export default resultsRouter
