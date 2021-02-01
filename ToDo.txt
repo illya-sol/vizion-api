@@ -1,5 +1,5 @@
 // Server
-✗ Make use of JSDOM
+✗ Use Puppeteer to scrape webpage for contents
 ✓ Create "/references" router for CRUD endpoints
 
 // Database
