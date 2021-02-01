@@ -5,8 +5,8 @@ import express, { Application, Request, Response } from 'express'
 import morgan from 'morgan'
 import 'reflect-metadata'
 import { Connection, createConnection } from 'typeorm'
-import referencesRouter from './references/referencesRouter'
-import resultsRouter from './results/resultRouter'
+import referencesRouter from './modules/references/referencesRouter'
+import resultsRouter from './modules/results/resultRouter'
 
 let connection: Connection
 
