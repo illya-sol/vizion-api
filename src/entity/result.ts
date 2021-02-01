@@ -7,7 +7,7 @@ export class Result extends BaseEntity {
    id!: number
 
    @OneToOne(() => Reference, reference => reference.id) @JoinColumn()
-   reference_!: number
+   reference_!: Reference
 
    @Column({ nullable: true })
    title?: string
@@ -15,7 +15,7 @@ export class Result extends BaseEntity {
    @Column({ nullable: true })
    meta_description?: string
 
-   @Column("timestamp")
+   @Column({ type: "timestamp", default: () => "CURRENT_TIMESTAMP" })
    created_at!: string
 }
 

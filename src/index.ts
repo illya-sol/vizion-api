@@ -6,6 +6,7 @@ import morgan from 'morgan'
 import 'reflect-metadata'
 import { Connection, createConnection } from 'typeorm'
 import referencesRouter from './references/referencesRouter'
+import resultsRouter from './results/resultRouter'
 
 let connection: Connection
 
@@ -30,6 +31,7 @@ const main = async () => {
    app.use(bodyparser.json())
 
    app.use('/references', referencesRouter)
+   app.use('/results', resultsRouter)
 
    app.listen(port, () => {
       console.log('\x1b[32m', '\nServer Launched')
@@ -40,3 +42,4 @@ const main = async () => {
 main()
 
 export { connection }
+

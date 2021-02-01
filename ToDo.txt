@@ -1,5 +1,5 @@
 // Server
-✗ Use Puppeteer to scrape webpage for contents
+✓ Use Puppeteer to scrape webpage for contents
 ✓ Create "/references" router for CRUD endpoints
 
 // Database
@@ -16,7 +16,7 @@
 ✓ Make Result interface
 
 // Endpoints
-✓ Hook up Router
+✓ Hook up Routers
 ✓ Add POST/GET/UPDATE/DELETE (CRUD) endpoints (obviously)
 ✗ Implement All endpoints (in progress)
 

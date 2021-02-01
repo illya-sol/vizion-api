@@ -6,7 +6,7 @@
    "password": "root",
    "database": "Vizion",
    "synchronize": true,
-   "logging": true,
+   "logging": false,
    "entities": [
       "src/entity/*.*"
    ]
