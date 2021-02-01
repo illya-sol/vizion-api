@@ -3,10 +3,10 @@ import { Reference } from './reference'
 
 @Entity()
 export class Result extends BaseEntity {
-   @PrimaryGeneratedColumn("increment")
+   @PrimaryGeneratedColumn("uuid")
    id!: number
 
-   @OneToOne(() => Reference, reference => reference.id) @JoinColumn()
+   @OneToOne(() => Reference, reference => reference.id, { cascade: ["soft-remove", "recover"] }) @JoinColumn()
    reference_!: Reference
 
    @Column({ nullable: true })
