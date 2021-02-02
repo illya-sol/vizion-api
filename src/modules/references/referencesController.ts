@@ -1,9 +1,9 @@
 import { Request, Response } from 'express';
 import { createConnection, Repository } from 'typeorm';
-import ReferenceEntity from '../entity/reference';
-import ResultEntity from '../entity/result';
-import { Data } from '../types/reference';
-import LookUpURL from '../worker/worker.js';
+import ReferenceEntity from '../../entity/reference';
+import ResultEntity from '../../entity/result';
+import { Data } from '../../types/reference';
+import LookUpURL from '../../worker/worker.js';
 
 var referenceRepository: Repository<ReferenceEntity>
 var resultRepository: Repository<ResultEntity>

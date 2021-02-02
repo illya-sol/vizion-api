@@ -10,8 +10,23 @@ const puppeteerScrapePage = async (url) => {
       waitUntil: 'load',
       timeout: 0
    })
-   const meta_description = await page.evaluate(() => document.querySelector('meta[name*="description"]').content)
-   const title = await page.evaluate(() => document.title)
+
+   let meta_description
+   let title
+
+   try {
+      meta_description = await page.evaluate(() => document.querySelector('meta[name*="description"]').content)
+   }
+   catch {
+      meta_description = "none"
+   }
+
+   try {
+      title = await page.evaluate(() => document.title)
+   }
+   catch {
+      title = "none"
+   }
 
    browser.close()
    return { meta_description, title }

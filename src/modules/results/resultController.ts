@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { createConnection, Repository } from 'typeorm';
-import ReferenceEntity from '../entity/reference';
-import ResultEntity from '../entity/result';
+import ReferenceEntity from '../../entity/reference';
+import ResultEntity from '../../entity/result';
 
 var referenceRepository: Repository<ReferenceEntity>
 var resultRepository: Repository<ResultEntity>
